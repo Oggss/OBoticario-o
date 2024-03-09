@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brinde O Boticário</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  .container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  .message {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-top: 20px;
+    display: none;
+    animation: bounce 0.5s infinite alternate;
+  }
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  .romantic-images {
+    display: none;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Brinde O Boticário</h1>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsYAKGOG3doOthAnv9o_pHJJpfTHg7De5lW_K2LYTun_0gSkJ7phYv9w&s=10" alt="Perfume" width="200">
+  <button onclick="showAnimatedText()">RECEBA AGORA</button>
+  <div id="animatedMessage" class="message"></div>
+  <div class="romantic-images">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5FcQtsNyfvpMx43hhJ46GX7_51erfvrS6ng&usqp=CAU" alt="Romantic Image 1" width="200">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN4LlEWTVmDs8Za3E11o54TwljtMynRt8UK4_ZIJVk9AOewfD4Q4Qgbq8&s=10" alt="" width="200">
+  </div>
+</div>
+<script>
+function showMessage() {
+  document.getElementById("animatedMessage").innerHTML = "TROLEII KK<br>Evelyn eu te amo tanto... Cuzinho hj?🙈";
+  document.getElementById("animatedMessage").style.display = "block";
+  document.querySelector(".romantic-images").style.display = "block";
+}
+
+function showAnimatedText() {
+  showMessage();
+  document.querySelector("button").style.display = "none";
+}
+</script>
+</body>
+</html>
